@@ -8,7 +8,7 @@
   <body>
     <h1>Library</h1>
     <button class="open-button" onclick="openForm()">New Book</button>
-    <table>
+    <table id="myTable">
       <tr>
         <th>Title</th>
         <th>Author</th>
@@ -22,7 +22,7 @@
         <td>234</td>
         <td>No</td>
         <td>
-          <button>X</butt on>
+          <button>X</button>
         </td>
       </tr>
       <tr>
@@ -49,7 +49,7 @@
         <label for="psw"><b>Number of Pages</b></label>
         <input type="password" placeholder="Enter Number of Pages" name="psw" required>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn" onclick="insertBook()">Submit</button>
         <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>
