@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>library</title>
+    <link href="style.css" rel="stylesheet" text="text/css">
+  </head>
+  <body>
+    <h1>Library</h1>
+    <button class="open-button" onclick="openForm()">New Book</button>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Number of Pages</th>
+        <th>Have Read</th>
+        <th>Remove</th>
+      </tr>
+      <tr>
+        <td>Lamar Jacksonsssssssssss</td>
+        <td>NFL</td>
+        <td>234</td>
+        <td>No</td>
+        <td>
+          <button>X</butt on>
+        </td>
+      </tr>
+      <tr>
+        <td>Lamar ssssssssssssssss</td>
+        <td>NFssssssssL</td>
+        <td>234</td>
+        <td>No</td>
+        <td>
+          <button>X</button>
+        </td>
+      </tr>
+    </table>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>New Book</h1>
+
+        <label for="email"><b>Title</b></label>
+        <input type="text" placeholder="Enter Title" name="email" required>
+
+        <label for="psw"><b>Author</b></label>
+        <input type="password" placeholder="Enter Author" name="psw" required>
+
+        <label for="psw"><b>Number of Pages</b></label>
+        <input type="password" placeholder="Enter Number of Pages" name="psw" required>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
