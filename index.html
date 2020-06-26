@@ -17,21 +17,12 @@
         <th>Remove</th>
       </tr>
       <tr>
-        <td>Lamar Jacksonsssssssssss</td>
-        <td>NFL</td>
-        <td>234</td>
-        <td>No</td>
+        <td>Cracking the Coding Interview</td>
+        <td>Gayle Laakmann McDonell</td>
+        <td>696</td>
+        <td><button class='no-btn' onclick='switchButton(this)'>No</button></td>
         <td>
-          <button class="remove-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Lamar ssssssssssssssss</td>
-        <td>NFssssssssL</td>
-        <td>234</td>
-        <td>No</td>
-        <td>
-          <button class="remove-btn">X</button>
+          <button class="remove-btn" onclick='deleteBook(this)'>X</button>
         </td>
       </tr>
     </table>
@@ -49,10 +40,9 @@
         <label for="num_pages"><b>Number of Pages</b></label>
         <input type="number" placeholder="Enter Number of Pages" name="num_pages" required>
 
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">I have Read</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">I haven't Read</label><br>
+        <label for="read"><b>Have I Read the Book?</b></label>
+        <input type="radio" id="read" name="read" value="read"> Yes
+        <input type="radio" id="not-read" name="read" value="not-read"> No
 
         <button type="button" class="btn" onclick="insertBook()">Submit</button>
         <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>

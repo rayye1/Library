@@ -51,6 +51,18 @@ td {
 .remove-btn:hover {
   color:red;
 }
+.yes-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.no-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
 
 /* The popup form - hidden by default */
 .form-popup {
