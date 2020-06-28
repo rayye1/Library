@@ -1,7 +1,6 @@
 let library = []
 
 addLibrary('s')
-addLibrary('s')
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -40,7 +39,7 @@ function insertBook() {
   cell3.innerHTML = numPages
   cell4.innerHTML = haveRead == 'read' ? "<button class='yes-btn' onclick='switchButton(this)'>Yes</button>"
   : "<button class='no-btn' onclick='switchButton(this)'>No</button>"
-  cell5.innerHTML = "<button class='remove-btn' onclick='deleteBook(this)'>X</button>"
+  cell5.innerHTML = "<button class='remove-btn' onclick='deleteBook(this)'>&#128465;</button>"
 }
 
 function deleteBook(r) {
